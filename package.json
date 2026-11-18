@@ -74,5 +74,11 @@
       "geckodriver",
       "node-jq"
     ]
-  }
+  },
+  "trustedDependencies": [
+    "edgedriver",
+    "esbuild",
+    "geckodriver",
+    "node-jq"
+  ]
 }
