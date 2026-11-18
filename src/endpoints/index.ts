@@ -6,6 +6,8 @@ import Studies from "./studies";
 import Email from "./email";
 import DataStreams from "./dataStreams";
 import SelfSignup from "./selfSignup";
+import Announcement from "./announcement";
+import Admin from "./admin";
 
 export {
   Accounts,
@@ -16,4 +18,6 @@ export {
   Email,
   DataStreams,
   SelfSignup,
+  Announcement,
+  Admin,
 };

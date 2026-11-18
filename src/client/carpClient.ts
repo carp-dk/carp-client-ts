@@ -2,6 +2,8 @@ import axios, { AxiosError, AxiosInstance } from "axios";
 import { Config } from "@/config";
 import {
   Accounts,
+  Admin,
+  Announcement,
   DataStreams,
   Email,
   Participation,
@@ -31,6 +33,10 @@ export default class CarpClient {
   dataStreams: DataStreams;
 
   selfSignup: SelfSignup;
+
+  announcement: Announcement;
+
+  admin: Admin;
 
   public get getInstance(): AxiosInstance {
     return this.instance;
@@ -112,5 +118,7 @@ export default class CarpClient {
     this.email = new Email(this);
     this.dataStreams = new DataStreams(this);
     this.selfSignup = new SelfSignup(this);
+    this.announcement = new Announcement(this);
+    this.admin = new Admin(this);
   }
 }

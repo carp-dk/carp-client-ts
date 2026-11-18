@@ -4,6 +4,8 @@
 
 ### Added
 
+- Added admin endpoints on `admin`, for CARP and system admins: `setAnnouncement`, `clearAnnouncement`, `getStudies` (optionally only live or non-live studies), `getResearchers` and `getServerInfo`
+- Added public `announcement.get` endpoint for the system announcement; returns `null` when none is set
 - Added self-signup endpoints: `getConfig`, `enable` and `end` on `study.selfSignup`, and the public `selfSignup.signUp`
 - Added `getParticipantGroupStatusCounts` endpoint for deployment-status totals
 - Added `page`/`size`/`search`/`status` (paginate, search, filter) to `getParticipantGroupAccountsAndStatus`; `page` and `size` are required together
